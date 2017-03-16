@@ -3,12 +3,7 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
+                <%@include file="./shared/sidebar.jsp" %>
             </div>
 
             <div class="col-md-9">
@@ -34,10 +29,10 @@
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
                             </a>
                             <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
                             </a>
                         </div>
                     </div>
