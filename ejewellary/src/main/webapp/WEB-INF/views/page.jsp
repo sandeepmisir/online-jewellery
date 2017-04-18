@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+	pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <spring:url var="css" value="/resources/css/" />
 <spring:url var="js" value="/resources/js/" />
@@ -14,79 +14,113 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>ejewellary - ${title}</title>
-    
-    <script>
-    	window.menu="${title}";
-    </script>
+<title>ejewellary - ${title}</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="${css}/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Readable theme -->
-    <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+<script>
+	window.menu = "${title}";
+	
+	window.contextRoot = "${contextRoot}";
+</script>
 
-    <!-- Custom CSS -->
-    <link href="${css}/myapp.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="${css}/bootstrap.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <script src="https://use.fontawesome.com/733445eeb5.js"></script>
+<!-- Bootstrap Readable theme -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<!-- Datatable Bootstrap CSS -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="${css}/myapp.css" rel="stylesheet">
+
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script
+	src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://use.fontawesome.com/733445eeb5.js"></script>
 
 </head>
 
 <body>
 
 	<div class="wrapper">
-	
-	    <!-- Navigation -->
-	    <%@include file="./shared/navbar.jsp" %>
-	
-	    <!-- Page Content -->
-	    
-	    <div class="content">
-		    <!-- loading the home page -->
-		    <c:if test="${userClickHome == true }">
-		    	<%@include file="home.jsp" %>
-		    </c:if>
-		    
-		    <!-- Only when user clicks About -->
-		    <c:if test="${userClickAbout == true }">
-		    	<%@include file="about.jsp" %>
-		    </c:if>
-		    
-		    <!-- Only when user clicks About -->
-		    <c:if test="${userClickContact == true }">
-		    	<%@include file="contact.jsp" %>
-		    </c:if>
-		    
-		    <!-- Only when user clicks About -->
-		    <c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
-		    	<%@include file="listProducts.jsp" %>
-		    </c:if>
-	    </div>
-	    
-	    <!-- footer comes here -->
-	    <%@include file="./shared/footer.jsp" %>
-	    <!-- /.container -->
-	
-	    <!-- jQuery -->
-	    <script src="${js}/jquery.js"></script>
-	
-	    <!-- Bootstrap Core JavaScript -->
-	    <script src="${js}/bootstrap.min.js"></script>
-	    
-	    <!-- self coded javascript -->
-	    <script src="${js}/myapp.js"></script>
+
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
+
+		<!-- Page Content -->
+
+		<div class="content myHome">
+			<!-- loading the home page -->
+			<c:if test="${userClickHome == true }">
+				<%@include file="home.jsp"%>
+			</c:if>
+
+			<!-- Only when user clicks About -->
+			<c:if test="${userClickAbout == true }">
+				<%@include file="about.jsp"%>
+			</c:if>
+
+			<c:if test="${userClickRegister == true }">
+				<%@include file="register.jsp"%>
+			</c:if>
+			
+			<c:if test="${isUserClickAddProduct == true }">
+				<%@include file="addProducts.jsp"%>
+			</c:if>
+
+			<!-- Only when user clicks About -->
+			<c:if test="${userClickContact == true }">
+				<%@include file="contact.jsp"%>
+			</c:if>
+
+			<!-- Only when user clicks About -->
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			<!-- Only when user clicks show product -->
+			<c:if
+				test="${userClickShowProduct == true}">
+				<%@include file="SingleProduct.jsp"%>
+			</c:if>
+
+			<c:if test="${userClickLogin == true }">
+				<%@include file="login.jsp"%>
+			</c:if>
+
+		</div>
+
+		<!-- footer comes here -->
+		<%@include file="./shared/footer.jsp"%>
+		<!-- /.container -->
+
+		<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!-- DATA TABLE plugins -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DATA TABLE Bootstrap script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
+		<!-- self coded javascript -->
+		<script src="${js}/myapp.js"></script>
 	</div>
 </body>
 

@@ -67,8 +67,45 @@ custom styling
 	padding-bottom:60px;
 }
 
-.footer {
+.footer-fixed-bottom {
 	position: absolute;
 	bottom:15px;
 	height:60px;
+}
+
+.carousel-row {
+	width: 100%;
+}
+
+.mainHeader {
+	margin-top: -6%;
+	background: #008080;
+	padding-top: 1%;
+	margin-bottom: -22px;
+}
+
+.navText {
+	color:black;
+}
+
+.myHome {
+	margin-right:-15px;
+	margin-left:-15px;
+}
+
+myForm {
+	width: 80%;
+}
+
+form input .searchBox {
+	width:100%;
+}
+
+.searchBtn {
+	    height: 40px;
+}
+.dataTableImg {
+	width: 100px;
+	height: 100px;
+	
 }

@@ -12,8 +12,8 @@
    
    ">
    
-   <context:component-scan base-package="com.niit.ejewellary.controller"/>
-   <context:component-scan base-package="com.niit.ejewellerybackend.daoimpl"/>
+   <context:component-scan base-package="com.niit.ejewellery"/>
+   <context:component-scan base-package="com.niit.ejewellerybackend"/>
    
    
    <bean id="viewResolver"
@@ -26,7 +26,7 @@
    
    <!-- loading static resources -->
    <mvc:annotation-driven />
-   
+   <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
    <mvc:resources location="/assets/" mapping="/resources/**" />
    
    

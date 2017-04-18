@@ -8,13 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.ejewellerybackend.dao.CategoryDAO;
-import com.niit.ejewellerybackend.dto.Category;
+import com.niit.ejewellerybackend.dao.SuppliersDAO;
+import com.niit.ejewellerybackend.dto.Suppliers;
 
 
-@Repository("categoryDAO")
+@Repository("suppliersDAO")
 @Transactional
-public class CategoryDAOimpl implements CategoryDAO {
+public class SuppliersDAOImpl implements SuppliersDAO {
 	
 	
 	@Autowired
@@ -22,11 +22,11 @@ public class CategoryDAOimpl implements CategoryDAO {
 
 
 	@Override
-	public List<Category> list() {
+	public List<Suppliers> list() {
 		
-		String selectActiveCategory = "FROM Category WHERE active = :active";
+		String selectActiveSuppliers = "FROM Category WHERE active = :active";
 		
-		Query query = sessionFactory.getCurrentSession().createQuery(selectActiveCategory);
+		Query query = sessionFactory.getCurrentSession().createQuery(selectActiveSuppliers);
 		
 		query.setParameter("active",true);
 		
@@ -34,9 +34,9 @@ public class CategoryDAOimpl implements CategoryDAO {
 	}
 	
 	@Override
-	public Category get(int id) {
+	public Suppliers get(int id) {
 		
-		return sessionFactory.getCurrentSession().get(Category.class,Integer.valueOf(id));
+		return sessionFactory.getCurrentSession().get(Suppliers.class,Integer.valueOf(id));
 		
 	}
 	
@@ -46,12 +46,12 @@ public class CategoryDAOimpl implements CategoryDAO {
 	 */
 	
 	@Override
-	public boolean add(Category category) {
+	public boolean add(Suppliers suppliers) {
 		
 		try{
 			//add the category to the database
 			
-			sessionFactory.getCurrentSession().save(category);
+			sessionFactory.getCurrentSession().save(suppliers);
 			
 			return true;
 		}
@@ -69,11 +69,11 @@ public class CategoryDAOimpl implements CategoryDAO {
 	 * updating a single category 
 	 */
 	@Override
-	public boolean update(Category category) {
+	public boolean update(Suppliers suppliers) {
 		try{
 			//add the category to the database
 			
-			sessionFactory.getCurrentSession().update(category);
+			sessionFactory.getCurrentSession().update(suppliers);
 			
 			return true;
 		}
@@ -87,14 +87,14 @@ public class CategoryDAOimpl implements CategoryDAO {
 	
 	
 	@Override
-	public boolean delete(Category category) {
+	public boolean delete(Suppliers suppliers) {
 		
-		category.setActive(false);
+		suppliers.setActive(false);
 		
 		try{
 			//add the category to the database
 			
-			sessionFactory.getCurrentSession().update(category);
+			sessionFactory.getCurrentSession().update(suppliers);
 			
 			return true;
 		}
