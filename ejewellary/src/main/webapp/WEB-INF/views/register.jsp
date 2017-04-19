@@ -120,7 +120,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="zip">Pin Code</label>  
           <div class="col-md-4">
-          <input id="zip" name="zip" type="text" placeholder="Zip Code" class="form-control input-md" required="">
+          <input id="zip" name="zip" type="text" placeholder="Pin Code" class="form-control input-md" required="">
     
           </div>
         </div>
