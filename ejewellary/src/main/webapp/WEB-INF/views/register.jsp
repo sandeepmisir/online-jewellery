@@ -3,13 +3,13 @@
     <fieldset>
 
         <!-- Form Name -->
-        <legend>Register</legend>
+        <h1 class="rTitle">Register</h1>
 
         <!-- Text input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="name">Vendor Name</label>  
+          <label class="col-md-4 control-label" for="name">Name</label>  
           <div class="col-md-4">
-          <input id="name" name="name" type="text" placeholder="Vendor Name" class="form-control input-md" required="">
+          <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
           <span class="help-block">Name of buisness</span>  
           </div>
         </div>
@@ -19,7 +19,7 @@
           <label class="col-md-4 control-label" for="phone">Phone</label>  
           <div class="col-md-4">
           <input id="phone" name="phone" type="text" placeholder="Phone Number" class="form-control input-md" required="">
-          <span class="help-block">Business Phone</span>  
+          <span class="help-block">Personal Phone</span>  
           </div>
         </div>
 
@@ -37,7 +37,7 @@
           <label class="col-md-4 control-label" for="password">Password </label>
           <div class="col-md-4">
             <input id="password" name="password" type="password" placeholder="Password " class="form-control input-md" required="">
-            <span class="help-block">Admin Password </span>
+            <span class="help-block">Password </span>
           </div>
         </div>
 
@@ -46,7 +46,7 @@
           <label class="col-md-4 control-label" for="rpassword">confirm</label>
           <div class="col-md-4">
             <input id="rpassword" name="rpassword" type="password" placeholder="Password" class="form-control input-md" required="">
-            <span class="help-block">Retype pass word</span>
+            <span class="help-block">Retype password</span>
           </div>
         </div>
 
@@ -83,94 +83,48 @@
           <div class="col-md-4">
             <select id="selectbasic" name="selectbasic" class="form-control">
 		        <option value="">Choose State:</option>
-		        <option value="AL">Alabama</option>
-		        <option value="AK">Alaska</option>
-		        <option value="AZ">Arizona</option>
-		        <option value="AR">Arkansas</option>
-		        <option value="CA">California</option>
-		        <option value="CO">Colorado</option>
-		        <option value="CT">Connecticut</option>
-		        <option value="DE">Delaware</option>
-		        <option value="FL">Florida</option>
-		        <option value="GA">Georgia</option>
-		        <option value="HI">Hawaii</option>
-		        <option value="ID">Idaho</option>
-		        <option value="IL">Illinois</option>
-		        <option value="IN">Indiana</option>
-		        <option value="IA">Iowa</option>
-		        <option value="KS">Kansas</option>
-		        <option value="KY">Kentucky</option>
-		        <option value="LA">Louisiana</option>
-		        <option value="ME">Maine</option>
-		        <option value="MD">Maryland</option>
-		        <option value="MA">Massachusetts</option>
-		        <option value="MI">Michigan</option>
-		        <option value="MN">Minnesota</option>
-		        <option value="MS">Mississippi</option>
-		        <option value="MO">Missouri</option>
-		        <option value="MT">Montana</option>
-		        <option value="NE">Nebraska</option>
-		        <option value="NV">Nevada</option>
-		        <option value="NH">New Hampshire</option>
-		        <option value="NJ">New Jersey</option>
-		        <option value="NM">New Mexico</option>
-		        <option value="NY">New York</option>
-		        <option value="NC">North Carolina</option>
-		        <option value="ND">North Dakota</option>
-		        <option value="OH">Ohio</option>
-		        <option value="OK">Oklahoma</option>
-		        <option value="OR">Oregon</option>
-		        <option value="PA">Pennsylvania</option>
-		        <option value="RI">Rhode Island</option>
-		        <option value="SC">South Carolina</option>
-		        <option value="SD">South Dakota</option>
-		        <option value="TN">Tennessee</option>
-		        <option value="TX">Texas</option>
-		        <option value="UT">Utah</option>
-		        <option value="VT">Vermont</option>
-		        <option value="VA">Virginia</option>
-		        <option value="WA">Washington</option>
-		        <option value="WV">West Virginia</option>
-		        <option value="WI">Wisconsin</option>
-		        <option value="WY">Wyoming</option>
+		        <option value="AL">Andra Pradesh</option>
+		        <option value="AK">Arunachal pradesh</option>
+		        <option value="AZ">Assam</option>
+		        <option value="AR">Bihar</option>
+		        <option value="CA">Chhattisgarh</option>
+		        <option value="CO">Goa</option>
+		        <option value="CT">Gujarat</option>
+		        <option value="DE">Haryana</option>
+		        <option value="FL">Himanchal Pradesh</option>
+		        <option value="GA">Jammu & Kashmir</option>
+		        <option value="HI">Jharkhand</option>
+		        <option value="ID">Karnataka</option>
+		        <option value="IL">Kerala</option>
+		        <option value="IN">Madhya Pradesh</option>
+		        <option value="IA">Maharashtra</option>
+		        <option value="KS">Manipur</option>
+		        <option value="KY">Meghalaya</option>
+		        <option value="LA">Mizoram</option>
+		        <option value="ME">Nagaland</option>
+		        <option value="MD">Odisha</option>
+		        <option value="MA">Panjab</option>
+		        <option value="MI">Rajashthan</option>
+		        <option value="MN">Sikkim</option>
+		        <option value="MS">Tamil Nadu</option>
+		        <option value="MO">Telangana</option>
+		        <option value="MT">Tripura</option>
+		        <option value="NE">Uttar Pradesh</option>
+		        <option value="NV">Uttarakhand</option>
+		        <option value="NH">West Bengal</option>
             </select>
           </div>
         </div>
 
         <!-- Text input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="zip">Zip Code</label>  
+          <label class="col-md-4 control-label" for="zip">Pin Code</label>  
           <div class="col-md-4">
           <input id="zip" name="zip" type="text" placeholder="Zip Code" class="form-control input-md" required="">
     
           </div>
         </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="contactname">Contact Name</label>  
-          <div class="col-md-4">
-          <input id="contactname" name="contactname" type="text" placeholder="Full Name" class="form-control input-md" required="">
-    
-          </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="contactphone">Contact Phone</label>  
-          <div class="col-md-4">
-          <input id="contactphone" name="contactphone" type="text" placeholder="Phone Number" class="form-control input-md" required="">
-    
-          </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="contactemail">Email</label>  
-          <div class="col-md-4">
-          <input id="contactemail" name="contactemail" type="text" placeholder="Email Address" class="form-control input-md" required="">
-    
-          </div>
         </div>
 
         <!-- Button (Double) -->

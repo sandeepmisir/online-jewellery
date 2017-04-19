@@ -18,15 +18,15 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="http://d2rtqa40fjkwr4.cloudfront.net/designer_banner/77/original/VC_NehaLulla_HeroBanner_02.jpg?1452168620"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="http://s3.amazonaws.com/newvelvetcase-test/designer_banner/189/original/VC_ShriRamHariRam_HeroBanner.jpg?1451369382"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="http://s3.amazonaws.com/newvelvetcase-test/designer_banner/317/original/VC_Mesmerize_HeroBanner_01.jpg?1479744319"
 									alt="">
 							</div>
 						</div>

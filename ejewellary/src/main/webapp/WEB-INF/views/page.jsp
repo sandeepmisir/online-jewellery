@@ -107,7 +107,10 @@
 		<%@include file="./shared/footer.jsp"%>
 		<!-- /.container -->
 
-		<!-- jQuery -->
+		
+	</div>
+	
+	<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
@@ -121,7 +124,7 @@
 
 		<!-- self coded javascript -->
 		<script src="${js}/myapp.js"></script>
-	</div>
+	
 </body>
 
 </html>

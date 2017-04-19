@@ -68,35 +68,10 @@
 
 						<li id="login"><a class="navText" href="${contextRoot}/login">Login</a></li>
 
-						<li id="register"><a class="navText"
-							href="${contextRoot}/register">Register</a></li>
-
+						<li id="register"><a class="navText"href="${contextRoot}/register">Register</a></li>
 
 					</ul>
-
-
-
-					<!-- <ul class="nav navbar-nav pull-right">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><apan class="glyphicon glyphicon-user"></span>MyAccount</a>
-
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#"><span class="gliphicon gliphicon-wrench"></span>Setting</a>
-									</li>
-									<li>
-										<a href="#"><span class="gliphicon gliphicon-refresh"></span>Update-Profile</a>
-									</li>
-									<li>
-										<a href="#"><span class="gliphicon gliphicon-briefcase"></span>Billing</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="#"><span class="gliphicon gliphicon-off"></span>Sign Out</a>
-									</li>
-								</ul>
-							</li>
-					</ul>end pull right -->
+					
 				</div>
 				<!-- /.navbar-collapse -->
 			</div>

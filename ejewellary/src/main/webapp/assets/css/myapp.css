@@ -69,7 +69,7 @@ custom styling
 
 .footer-fixed-bottom {
 	position: absolute;
-	bottom:15px;
+	bottom:5px;
 	height:60px;
 }
 
@@ -109,3 +109,43 @@ form input .searchBox {
 	height: 100px;
 	
 }
+
+.rTitle {
+	text-align: center;
+}
+
+ .loginImg {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+    .loginPanel {
+    	margin-top: 5%;
+        width: 290px;
+        background: aqua;
+        border-radius: 6px;
+        overflow: hidden;
+        height: 484px;
+        left: 50%;
+        margin-left: -155px;
+    }
+
+    .loginInner {
+        height: 484px;
+    }
+
+    .jumbotron {
+        height: 484px;
+       
+    }
+
+    .imgDiv {
+        padding-top: 30px;
+    }
